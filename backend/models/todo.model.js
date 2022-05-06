@@ -16,7 +16,7 @@ const todoSchema = new Schema(
             unique: false,
             trim: true
         },
-        completed: {
+        isCompleted: {
             type: Boolean,
             required: true
         }

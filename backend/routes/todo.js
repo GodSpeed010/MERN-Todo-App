@@ -10,8 +10,9 @@ router.route('/').get((req, res) => {
 router.route('/').post((req, res) => {
     const title = req.body.title;
     const description = req.body.description;
+    const isCompleted = req.body.isCompleted;
 
-    const newTodo = new Todo({ title, description });
+    const newTodo = new Todo({ title, description, isCompleted });
 
     newTodo.save()
         .then(() => res.json('Todo added!'))

@@ -13,8 +13,12 @@ const todoSchema = new Schema(
         description: {
             type: String,
             required: true,
-            unique: true,
+            unique: false,
             trim: true
+        },
+        completed: {
+            type: Boolean,
+            required: true
         }
     },
     { timestamps: true }

@@ -39,7 +39,7 @@ router.route('/:id').patch((req, res) => {
     const todoId = req.params.id;
 
     Todo.findByIdAndUpdate(todoId, req.body)
-        .then(todo => res.json('Todo updated.'))
+        .then(() => res.json('Todo updated.'))
         .catch(err => res.status(400).json(`Error: ${err}`));
 });
 

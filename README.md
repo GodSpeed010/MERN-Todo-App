@@ -1,15 +1,25 @@
 # MERN Todo App
-A simple Todo App made to gain more experience with the MERN stack. The frontend is hosted with Firebase hosting, and the backend is hosted on heroku.
+A simple Todo App made to gain more experience with the MERN stack. The frontend is hosted with Firebase hosting, and the backend is hosted on Heroku.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Dependencies
 
-### `npm start`
+* In the backend directory, create a **.env** file to store the MongoDB **ATLAS_URI**. Example:
+    ```
+    ATLAS_URI="<atlas_uri_here>"
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installing
 
+* Run `npm install` in the project directory to install all dependencies for the frontend
+* Run `npm install` in the backend directory to install all dependencies for the backend
+
+### Executing program
+
+* In the backend directory, run `npm start` to start the backend server.
+* In the project directory, you can run `npm start` to run the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 

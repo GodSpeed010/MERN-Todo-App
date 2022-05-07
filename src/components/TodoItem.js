@@ -5,8 +5,9 @@ export default function TodoItem({ todo }) {
     console.log(`TodoItem: ${JSON.stringify(todo)}`)
     const [checked, setChecked] = useState(todo.isCompleted);
     const handleCheck = () => {
-        console.log(`was ${checked}`)
-        //todo use axios to PATCH todo
+        axios.patch('/todo/' + todo._id, { isCompleted: !checked })
+            .then(res => console.log(res.data));
+
         setChecked(!checked);
     }
 

@@ -6,6 +6,7 @@ import { Delete, Edit } from '@mui/icons-material';
 export default function TodoItem({ todo, onDelete, onEdit }) {
     const [checked, setChecked] = useState(todo.isCompleted);
 
+    //todo move this up to TodoList
     const handleCheck = () => {
         axios.patch('/todo/' + todo._id, { isCompleted: !checked })
             .then(res => console.log(res.data));

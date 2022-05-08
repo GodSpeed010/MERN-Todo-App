@@ -15,7 +15,7 @@ router.route('/').post((req, res) => {
     const newTodo = new Todo({ title, description, isCompleted });
 
     newTodo.save()
-        .then(() => res.json('Todo added!'))
+        .then(todo => res.json({msg: 'Todo added!', todo: todo}))
         .catch(err => res.status(400).json(`Error: ${err}`));
 });
 

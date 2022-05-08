@@ -1,6 +1,12 @@
 # MERN Todo App
 A simple Todo App made to gain more experience with the MERN stack. The frontend is hosted with Firebase hosting, and the backend is hosted on Heroku.
 
+## Links
+* [Firebase App Demo](https://mern-todo-app-b186f.web.app/)
+
+## Gif Walkthrough
+[![MERN_Todo_App_Gif.gif](https://s8.gifyu.com/images/MERN_Todo_App_Gif.gif)](https://gifyu.com/image/Ss4Nh)
+
 ## Getting Started
 
 ### Dependencies
